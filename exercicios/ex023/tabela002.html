@@ -12,6 +12,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td,th {
@@ -19,9 +20,33 @@
             padding: 10px;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+
+        }
+
         thead, tfoot {
-            background-color: gray;
+            background-color: #383838;
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color:#383838 ;
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-color: white;
+           
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: lightgray;
+            
         }
 
         td.num {
@@ -33,6 +58,7 @@
     <h1>Uso de tabelas grandes</h1>
     <!--
         ANATOMIA PARA TABELAS GRANDES
+            CAPTION
             THEAD
                 TR,TD,TH
             TBODY
@@ -42,10 +68,11 @@
     -->
 
     <table>
+        <caption>População da Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -161,11 +188,16 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>213.317.639</strong></td>
             </tr>
 
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum incidunt pariatur ipsa dolor aliquid laudantium quisquam expedita vitae ea illum nulla quidem sint, praesentium cum! Aut saepe fuga quos sapiente. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus in nesciunt, reprehenderit consectetur perspiciatis necessitatibus ab optio voluptas, magni similique eum soluta, quidem porro. Aliquam nulla dolores harum aut consectetur. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad non vitae fugit consequuntur, temporibus autem alias? Voluptatum, nemo magnam quia possimus explicabo culpa doloremque, natus est earum omnis animi mollitia. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, odio incidunt? Rem dicta, a doloribus incidunt cupiditate maiores minus explicabo est dignissimos libero officia! Accusantium tempora hic nulla distinctio corrupti!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum incidunt pariatur ipsa dolor aliquid laudantium quisquam expedita vitae ea illum nulla quidem sint, praesentium cum! Aut saepe fuga quos sapiente. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus in nesciunt, reprehenderit consectetur perspiciatis necessitatibus ab optio voluptas, magni similique eum soluta, quidem porro. Aliquam nulla dolores harum aut consectetur. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad non vitae fugit consequuntur, temporibus autem alias? Voluptatum, nemo magnam quia possimus explicabo culpa doloremque, natus est earum omnis animi mollitia. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, odio incidunt? Rem dicta, a doloribus incidunt cupiditate maiores minus explicabo est dignissimos libero officia! Accusantium tempora hic nulla distinctio corrupti!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum incidunt pariatur ipsa dolor aliquid laudantium quisquam expedita vitae ea illum nulla quidem sint, praesentium cum! Aut saepe fuga quos sapiente. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus in nesciunt, reprehenderit consectetur perspiciatis necessitatibus ab optio voluptas, magni similique eum soluta, quidem porro. Aliquam nulla dolores harum aut consectetur. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad non vitae fugit consequuntur, temporibus autem alias? Voluptatum, nemo magnam quia possimus explicabo culpa doloremque, natus est earum omnis animi mollitia. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, odio incidunt? Rem dicta, a doloribus incidunt cupiditate maiores minus explicabo est dignissimos libero officia! Accusantium tempora hic nulla distinctio corrupti!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum incidunt pariatur ipsa dolor aliquid laudantium quisquam expedita vitae ea illum nulla quidem sint, praesentium cum! Aut saepe fuga quos sapiente. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus in nesciunt, reprehenderit consectetur perspiciatis necessitatibus ab optio voluptas, magni similique eum soluta, quidem porro. Aliquam nulla dolores harum aut consectetur. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad non vitae fugit consequuntur, temporibus autem alias? Voluptatum, nemo magnam quia possimus explicabo culpa doloremque, natus est earum omnis animi mollitia. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, odio incidunt? Rem dicta, a doloribus incidunt cupiditate maiores minus explicabo est dignissimos libero officia! Accusantium tempora hic nulla distinctio corrupti!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum incidunt pariatur ipsa dolor aliquid laudantium quisquam expedita vitae ea illum nulla quidem sint, praesentium cum! Aut saepe fuga quos sapiente. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus in nesciunt, reprehenderit consectetur perspiciatis necessitatibus ab optio voluptas, magni similique eum soluta, quidem porro. Aliquam nulla dolores harum aut consectetur. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad non vitae fugit consequuntur, temporibus autem alias? Voluptatum, nemo magnam quia possimus explicabo culpa doloremque, natus est earum omnis animi mollitia. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, odio incidunt? Rem dicta, a doloribus incidunt cupiditate maiores minus explicabo est dignissimos libero officia! Accusantium tempora hic nulla distinctio corrupti!</p>
 </body>
 </html>
